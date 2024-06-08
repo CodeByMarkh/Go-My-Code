@@ -1,0 +1,98 @@
+body{
+    background-color: #ffffff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container{
+    width: 1000px;
+    margin: auto;
+     transition: .5s;
+}
+.container h1 {
+    color: #724059;
+
+}
+.container header{
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    margin-top: 50px;
+}
+.container header .shopping{
+    position: relative;
+    text-align: right;
+}
+.shopping i {
+    font-size: 3rem;
+    color: #724059;
+    cursor: pointer;
+    transition: all .25s ease;
+}
+.shopping i:hover{
+    color: #C4A484;
+}
+.shopping span{
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    position: absolute;
+    top: -5px;
+    left: 80%;
+    padding: 3px 10px;
+}
+.list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 50px;
+}
+.cart{
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 500px;
+    background-color: #ffffff;
+    border-left: 1px solid #724059;
+    height: 100vh;
+    transition: .5s;
+}
+.active .cart{
+    left: calc(100% - 500px);
+}
+.active .container{
+    transform: translateX(-200px);
+    -webkit-transform: translateX(-200px);
+    -moz-transform: translateX(-200px);
+}
+.cart h1{
+    color: #724059;
+    font-weight: 300;
+    margin: 0;
+    padding:  0 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.cart .checkout{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.cart .checkout div{
+    background-color: #724059;
+    color: #ffffff;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+.card .checkout div:nth-child(2){
+    background-color: #1c1f25;
+    color: #ffffff;
+}

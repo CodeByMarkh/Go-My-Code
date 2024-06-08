@@ -1,0 +1,130 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #0011ff;
+    --background-color: #ffffff;
+    --secondary-color: #d7eee8;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: sans-serif;
+}
+#header {
+    width: 100%;
+    background-color: var(--background-color);
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+#nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.logo {
+    max-width: 50px; /* Adjust size as needed */
+    height: auto;
+}
+
+.contact-btn {
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #4cc6c9; /* Slightly darker shade of secondary color */
+}
+
+.aboutme {
+    color: black; /* Set font color for the section */
+    padding: 20px; /* Add some padding for better spacing */
+    margin-top: 100px; /* Add margin to push the section below the fixed header */
+    margin-left: 150px;
+}
+
+.aboutme span {
+    font-family: 'Oswald', sans-serif; /* Apply Oswald font family to the span tag */
+}
+.aboutme p{
+    font-size: 500%;
+}
+.aboutme .hire-me{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: var(--secondary-color);
+}
+.aboutme .skills{
+    margin-top: 20px;
+}
+.aboutme .skills .skill1{
+    padding: 10px;
+    border-radius: 5px;
+}
+.aboutme .skills .skill2{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #0011ff;
+}
+.aboutme .skills .skill3{
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: yellow;
+}
+.aboutme .skills .skill4{
+    display: inline;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: orangered;
+}
+.aboutme .image2 {
+    position: absolute;
+    top: 0;
+    right: 180px; /* Align the image to the right side */
+}
+.aboutme{
+    justify-self: unset;
+}

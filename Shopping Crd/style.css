@@ -1,0 +1,302 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #333;
+}
+
+.bg_links {
+    margin: 0 10px;
+}
+
+.bg_links .icon {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: block;
+}
+
+/* Wrapper and Navigation */
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mainLogo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menuLinks {
+    display: flex;
+    gap: 20px;
+}
+
+.menuLink {
+    color: #333;
+    font-size: 18px;
+}
+
+.shoppingCart {
+    position: relative;
+    margin-left: 20px;
+}
+
+.shoppingIcon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.shoppingIcon img {
+    width: 30px;
+    height: 30px;
+}
+
+.itemNumber {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+
+.shoppingMenu {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    display: none;
+}
+
+.shoppingIcon:hover .shoppingMenu {
+    display: block;
+}
+
+.shoppingTitle {
+    font-weight: bold;
+    padding: 10px;
+}
+
+.productResume {
+    display: flex;
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.shoppingThumb {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.shoppingBtn {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.shoppingBtn .link,
+.shoppingBtn .btn {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.iconMenu img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Content Section */
+.content {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.left, .right {
+    flex: 1;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 400px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sliderNavigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.rightContent {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.modelTitle {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.modelDesc {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.price {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.priceFinal {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+.priceOriginal {
+    font-size: 18px;
+    text-decoration: line-through;
+    color: #777;
+}
+
+.specs .subtitle {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dropOpen {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: none;
+}
+
+.dropdown:hover .dropOpen {
+    display: block;
+}
+
+.dropItems {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropItem {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropItem:hover {
+    background-color: #f0f0f0;
+}
+
+.quantityCounter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.inputQuantity {
+    width: 50px;
+    text-align: center;
+}
+
+.btnQuantity {
+    cursor: pointer;
+}
+
+.btnContainer {
+    margin-top: 20px;
+}
+
+.btn.add {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
